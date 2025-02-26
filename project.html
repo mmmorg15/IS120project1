@@ -6,35 +6,56 @@
     <title>Project 1</title>
     <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/13524500a8.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <header>
-        <h1>Title stuff</h1>
-            <nav>
-                <ul>
-                    <!-- Probably need to add href # -->
-                    <li><a href="#">Home</a></li>  
-                    <li><a href="#">Products</a></li> 
-                    <li><a href="#">More Info</a></li> 
-                </ul>
-            </nav>
-            <!-- Put the icons here Need to assign a class -->
-            <div>
-                <!-- Icons x3 FIGURE OUT HOVER EFFECTS TO EXPLAIN WHAT THEY ARE -->
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-user"></i>
-                <i class="fa-solid fa-heart"></i>
-            </div>
+<body >
+    <!-- Navigation -->
+    <header class="bg-blue-950">
+        <div class="container">
+            <div class="title-container">Title Here</div>
+                    <nav class="nav-links">
+                        <a href="#">Home</a>
+                        <a href="#">Products</a>
+                        <a href="#">More Info</a>
+                    </nav>
+                    <!-- Put the icons here Need to assign a class -->
+                    <div class="icon-container">
+                        <!-- Icons x3 FIGURE OUT HOVER EFFECTS TO EXPLAIN WHAT THEY ARE -->
+                        <i class="fa-solid fa-magnifying-glass icons"></i>
+                        <i class="fa-solid fa-user icons"></i>
+                        <i class="fa-solid fa-heart icons"></i>
+                    </div>
+        </div>
     </header>
 
     <main>
         <!-- Product Section with image. will need to figure out how to use an aside and make it scroll -->
-        <section>
+        <section class="product-container">
+            <div class="product-img">
+                <img src="./pexels-melvin-buezo-1253763-2529148.jpg" alt="">
+            </div>
+            <aside class="aside-container">
+                <div><!-- Put the Title Here in its own div and class -->
+                </div>
+                <div><!--Put a list with some info about the product--> Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nobis quis expedita odio necessitatibus voluptas minus optio numquam dicta, ullam perferendis laborum esse! Sint fugiat ad, nesciunt explicabo labore obcaecati.</div>
+            </aside>
 
         </section>
 
         <!-- Page Divider Section With input boxes and an image -->
         <section>
+            <div class="divider">
+                <div class="divider-container">
+                    <img src="./pexels-dominikruhl-7425276.jpg" alt="">
+                </div>
+                
+                <div class="inputs">
+                    <input type="text" placeholder="Enter your first name">
+                    <input type="text" placeholder="Enter your last name">
+                    <input type="text" placeholder="Enter your email">
+                    <input type="text" placeholder="Enter your phone number">
+                </div>
+            </div>
 
         </section>
 
