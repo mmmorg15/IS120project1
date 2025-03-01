@@ -8,10 +8,42 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: "MedievalSharp";
+    font-family: "Monda";
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Arrow */
+.arrow {
+    animation: fade 1s infinite alternate ease-in-out;
+}
+
+@keyframes fade {
+    0% { opacity: 1; }
+    100% { opacity: 0.2; }
+}
+
+
+
+
+
+
 /* Header and Nav */
+
+.sticky-header{
+    position: sticky;
+    top: 0;
+    flex: 1;
+    z-index: 100000;
+}
+
+.gradient{
+    background: rgb(51,0,255);
+    background: linear-gradient(0deg, rgba(51,0,255,1) 0%, rgba(25,24,50,1) 100%);
+}
 
 .container {
     width: 100%;
@@ -19,10 +51,10 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border: 5px solid black;
+    /* border: 5px solid black; */
     color: white;
     font-size: 1.3rem;
-    padding: .5rem;
+    padding: .25rem;
 }
 
 .title-container{
@@ -30,9 +62,12 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    border: 5px solid blue;
+    /* border: 5px solid blue; */
     gap: 1rem;
     font-size: 1.5rem;
+    transition: ease .3s;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
 }
 .svgcontainer{
     display: flex;
@@ -57,8 +92,8 @@ input::placeholder{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 5px solid orange;
-    gap: 1rem;
+    /* border: 5px solid orange; */
+    gap: 1.5rem;
 
 }
 .nav-links a{
@@ -69,7 +104,7 @@ input::placeholder{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 5px solid green;
+    /* border: 5px solid green; */
     gap: 1rem;
 }
 
@@ -77,7 +112,7 @@ input::placeholder{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px solid red
+    /* border: 3px solid red */
 
 }
 
@@ -96,6 +131,7 @@ input::placeholder{
 	overflow: hidden;
     border: 5px solid black;
     margin: 3rem 0;
+    border-radius: 8px;
 }
 
 .product-img img{
@@ -137,7 +173,7 @@ input::placeholder{
 	overflow: hidden;
 }
 
-.divider-text-container{
+/* .divider-text-container{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -145,9 +181,10 @@ input::placeholder{
     align-items: center;
     width: 80%;
     gap: 1rem;
+}
     /* border: 3px solid violet; */
     
-}
+
 
 .inputs{
     display: flex;
@@ -158,6 +195,7 @@ input:hover{
     
     border: 1px solid white;
     border-radius: .5rem;
+    transition: ease .3s;
 }
 
 
@@ -200,6 +238,11 @@ input:hover{
 	height: 100%;
     /* border: 3px solid red; */
 
+}
+.card:hover{
+    scale: 1.01;
+    box-shadow: 1px 1px 1px 1px black;
+    transition: ease .3s;
 }
 
 .card-image{
@@ -268,6 +311,7 @@ input:hover{
     flex-direction: column;
     align-items: center;
     margin-bottom: 3rem;
+    margin-top: 2rem;
 }
 
 .questions-box{
@@ -276,6 +320,7 @@ input:hover{
     display: flex;
     flex-wrap: wrap;
     border: 3px solid blue;
+    margin-top: 1rem;
 }
 
 .questions-container{
@@ -288,6 +333,29 @@ input:hover{
 }
 
 
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    color: black;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
 /* Foooter Section */
 
 .big-footer-container{
@@ -296,16 +364,17 @@ input:hover{
     justify-content: center;
     width: 100%;
     height:auto;
-    border: 3px solid pink;
+    /* border: 3px solid pink; */
 }
 .footer-container{
     display: flex;
     flex-wrap: wrap;
     width: 80%;
-    border: 3px solid black;
+    /* border: 3px solid black; */
     justify-content: center;
     gap: 1rem;
     margin-bottom: 3rem;
+    margin-top: 3rem;
 }
 .footer-section{
     display: flex;
@@ -313,10 +382,17 @@ input:hover{
     flex-direction: column;
     width: 20%;
     height: auto;
-    border: 3px solid orange;
+    /* border: 3px solid orange; */
+    box-sizing: border-box;
 }
 .footer-section h1{
     font-size: 1.5rem;
     border-bottom: 2px solid black;
     display: inline-block;
+    margin-bottom: .25rem;
+}
+
+.footer-section li:hover{
+    font-size: 1.1rem;
+    transition: ease .3s;
 }
