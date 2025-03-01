@@ -11,8 +11,6 @@ majority of your styling)
 
 [6 pts] Include 3+ SVG elements (icons, page artwork, or dividing elements). (2 pts
 per element)
-[5 pts] Have a full system of CSS Variables that are used throughout your site (at
-least 10 variables)
 
 [3 pts] Include 3+ tooltips (1 pt. each)
 [2 pts] Include a favicon (inclusive of your 5+ in required tasks)
