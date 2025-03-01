@@ -320,6 +320,9 @@ input:hover{
     justify-content: center;
     padding: 1rem;
 }
+.youtube-video{
+    width: 100%;
+}
 
 
 /* Frequenly asked questions Section */
